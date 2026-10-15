@@ -10,6 +10,12 @@ Kendi dokümanlarını (PDF, Markdown veya yapıştırılmış metin) yükleyip,
 dayanarak soru cevaplayan ve herhangi bir web sitesine tek satır `<script>` ile gömülebilen bir
 RAG (Retrieval-Augmented Generation) destek botu platformu.
 
+## Ekran Görüntüleri
+
+| Doküman Yükleme | Sohbet | Gömülebilir Widget |
+|---|---|---|
+| ![Doküman yükleme ekranı](docs/screenshots/01-dokuman-yukleme.png) | ![Sohbet ekranı](docs/screenshots/02-chat.png) | ![Siteye gömülü widget](docs/screenshots/03-widget-embed.png) |
+
 ## Mimari
 
 - **backend/** — Ruby on Rails 8 API (PostgreSQL, Active Storage, email/şifre + JWT auth, Gemini)
