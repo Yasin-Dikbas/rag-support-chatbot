@@ -29,9 +29,13 @@ Generation) destek botu platformu.
 
 ## Ekran Görüntüleri
 
-| Doküman Yükleme | Sohbet | Gömülebilir Widget |
+| Giriş | Bot Listesi | Doküman Yükleme |
 |---|---|---|
-| ![Doküman yükleme ekranı](docs/screenshots/01-dokuman-yukleme.png) | ![Sohbet ekranı](docs/screenshots/02-chat.png) | ![Siteye gömülü widget](docs/screenshots/03-widget-embed.png) |
+| ![Giriş ekranı](docs/screenshots/04-giris.png) | ![Bot listesi ekranı](docs/screenshots/05-botlar.png) | ![Doküman yükleme ekranı](docs/screenshots/01-dokuman-yukleme.png) |
+
+| Bot Detayı (Doküman + Sohbet) | Sohbet | Gömülebilir Widget |
+|---|---|---|
+| ![Bot detay ekranı](docs/screenshots/06-yd-bot-detay.png) | ![Sohbet ekranı](docs/screenshots/02-chat.png) | ![Siteye gömülü widget](docs/screenshots/03-widget-embed.png) |
 
 ## Mimari
 
