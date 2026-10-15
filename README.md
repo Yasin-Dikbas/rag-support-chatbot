@@ -6,9 +6,26 @@
 ![Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash%20%2B%20Embeddings-0a0a14?logo=googlegemini&logoColor=818cf8)
 ![Vite](https://img.shields.io/badge/Vite-8-0a0a14?logo=vite&logoColor=646CFF)
 
-Kendi dokümanlarını (PDF, Markdown veya yapıştırılmış metin) yükleyip, yalnızca o dokümanlara
-dayanarak soru cevaplayan ve herhangi bir web sitesine tek satır `<script>` ile gömülebilen bir
-RAG (Retrieval-Augmented Generation) destek botu platformu.
+**Full-stack bir portföy projesi:** React (frontend) + Ruby on Rails (API backend) + Google
+Gemini (LLM ve embedding) ile uçtan uca geliştirilmiştir. Kendi dokümanlarını (PDF, Markdown
+veya yapıştırılmış metin) yükleyip, yalnızca o dokümanlara dayanarak soru cevaplayan ve
+herhangi bir web sitesine tek satır `<script>` ile gömülebilen bir RAG (Retrieval-Augmented
+Generation) destek botu platformu.
+
+## Öne Çıkan Noktalar
+
+- **Uçtan uca full-stack mimari:** React (Vite) SPA + Ruby on Rails 8 API-only backend,
+  JWT ile stateless kimlik doğrulama.
+- **Gerçek bir RAG pipeline'ı:** doküman yükleme → metin çıkarma → chunk'lama → embedding
+  üretme → sorgu zamanında benzerlik araması → LLM ile kaynak gösterilerek cevap üretme.
+- **Asenkron iş işleme:** doküman işleme (`ProcessDocumentJob`) arka planda, kullanıcı
+  arayüzünü bloklamadan çalışır; arayüz polling ile durumu canlı takip eder.
+- **Mühendislik kararı ve gerekçesi:** hedef altyapıda `pgvector` kurulamadığı için
+  benzerlik araması bilinçli olarak Ruby tarafında yeniden tasarlandı (bkz. aşağıdaki
+  "Neden pgvector değil?" bölümü) — production'a geçişte tek satırlık migration yolu
+  baştan planlandı.
+- **Gömülebilir widget:** tek satır `<script>` ile herhangi bir siteye entegre edilebilen,
+  bağımsız bir vanilla-JS widget + iframe mimarisi.
 
 ## Ekran Görüntüleri
 
